@@ -1,0 +1,57 @@
+import {Flex, Spacer, Image, Center, SimpleGrid, Box, Text} from '@chakra-ui/react';
+
+
+<Flex>
+  <Box p={4} m={4}>
+    ![](/img/logo.png)
+  </Box>
+  <Spacer />
+  <Box>
+  # Welcome to the [LSST DESC](https://lsstdesc.org/) Data Portal
+
+  If you are new to Globus or have questions, please see the "Getting Started" section below. Otherwise, to download datasets, click Sign In above to authenticate into Globus using your organizational login or existing GlobusID. If needed, create a GlobusID using the "Sign Up" link.
+  </Box>
+</Flex>
+
+<hr />
+
+<SimpleGrid columns={2} spacing={10}>
+
+<Box>
+  ## Getting Started
+
+Start by downloading data files from the Portal. Note that the complete DC2 dataset (Object and Truth Match) is about 180 Gbytes and cosmoDC2 is over 5 Tbytes; you may want to start with a subset. We recommend the sample subset available from the Portal. Once downloaded, you may access the files directly using standard tools for the dataset file type.
+
+Alternatively, for a higher-level interface, you may install and configure the Python package GCRCatalogs.
+
+In order to get some experience with the data we have provided Jupyter notebooks for each dataset. GCRCatalogs is required in order to run them.
+</Box>
+
+<Box>
+  ## Documentation
+  
+  ### General Instructions
+  - [Download data files](/doc/download)
+  - [Set up Globus Personal Connect](/doc/globus_personal)
+  - [Install and configure GCRCatalogs](/doc/install_gcr)
+  - [How to acknowledge](/doc/how_to_acknowledge)
+  
+  ### Instructions and Notebooks Specific to Data Set
+  - [DC2 Simulated Sky Survey](/doc/dc2_sim_sky_survey)
+  - [CosmoDC2](/doc/cosmodc2)
+  
+  ### Need Help?
+  - [Post a question here!](https://github.com/LSSTDESC/desc-data-portal/discussions)
+</Box>
+
+</SimpleGrid>
+
+<hr />
+
+<Center>
+  <Text fontSize="sm" as="span">
+  DESC acknowledges ongoing support from the US Department of Energy, the Institut National de Physique Nucléaire et Physique des Particules (France), the Science and Technology Facilities Council (United Kingdom), and the National Science Foundation and LSST Corporation (United States).
+  </Text>
+</Center>
+
+<hr />
