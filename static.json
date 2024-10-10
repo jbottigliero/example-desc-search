@@ -8,42 +8,39 @@
     "version": "1.0.0",
     "attributes": {
       "metadata": {
-        "title": "Search | Globus Search Portal"
+        "title": "LSSTDESC Data Portal"
       },
       "content": {
-        "headline": "Globus Search Portal"
+        "headline": "LSSTDESC Data Portal"
       },
       "features": {
-        "transfer": false
+        "transfer": true
       },
       "components": {
         "Result": {
           "heading": "entries[0].content.name",
           "fields": [
             {
-              "label": "Tags",
-              "property": "entries[0].content.tags"
+              "label": "Size",
+              "property": "entries[0].content.size"
             },
             {
-              "label": "Region",
-              "property": "entries[0].content.region"
+              "label": "Tags",
+              "property": "entries[0].content.tags"
             }
           ]
         }
       },
       "globus": {
+        "application": {
+          "client_id": "8d78919b-1fe1-4663-bedf-ce5f4f7f0ce0"
+        },
         "search": {
-          "index": "78b92aca-e361-4307-8f66-bc448f20e2c3",
+          "index": "79561f09-e9bc-47e1-bc28-cf3ac415623c",
           "facets": [
             {
               "name": "Tags",
               "field_name": "tags",
-              "type": "terms",
-              "size": 10
-            },
-            {
-              "name": "Region",
-              "field_name": "region",
               "type": "terms",
               "size": 10
             }
