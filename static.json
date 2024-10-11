@@ -21,12 +21,38 @@
           "heading": "entries[0].content.name",
           "fields": [
             {
+              "label": "Summary",
+              "property": "entries[0].content.summary"
+            },
+            {
+              "label": "Documentation",
+              "property": "entries[0].content.documentation",
+              "type": "link"
+            },
+            {
               "label": "Size",
               "property": "entries[0].content.size"
             },
             {
               "label": "Tags",
               "property": "entries[0].content.tags"
+            }
+          ]
+        },
+        "ResultListing": {
+          "fields": [
+            {
+              "label": "Summary",
+              "property": "entries[0].content.summary"
+            },
+            {
+              "label": "Documentation",
+              "property": "entries[0].content.documentation",
+              "type": "link"
+            },
+            {
+              "label": "Size",
+              "property": "entries[0].content.size"
             }
           ]
         }
